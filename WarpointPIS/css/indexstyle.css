@@ -1,0 +1,594 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  /* Хэдер */
+  .main-header {
+    background-color: #1b1b1b;
+    padding: 15px 40px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu li a:hover {
+    color: #fdd835;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .book-btn {
+    background-color: #3366ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-btn:hover {
+    background-color: #264fd1;
+  }
+  
+  .hero-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .hero-image img {
+    width: 400px;
+    max-width: 90vw;
+    transform: skewY(-3deg);
+    border: 2px solid #005eff;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+    text-transform: uppercase;
+    max-width: 600px;
+  }
+  
+  .hero-text p {
+    margin: 0 0 10px 0;
+  }
+  
+  .hero-text span {
+    background-color: #e53939;
+    padding: 5px 15px;
+    display: inline-block;
+    color: #fff;
+    transform: skewX(-10deg);
+    margin-left: 10px;
+  }
+
+
+  .arena-block {
+    background-color: #1c1c1c;
+    padding: 60px 40px;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .arena-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .arena-text {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .arena-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .arena-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .arena-details {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .arena-details li {
+    background-color: #e52328;
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .arena-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .arena-more:hover {
+    color: #e52328;
+  }
+  
+  .arena-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  .arena-image {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .arena-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(229, 35, 40, 0.9);
+    color: white;
+    font-size: 36px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .arena-banner {
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    width: 180px;
+    height: 50px;
+    background-color: #e52328;
+    transform: skew(-15deg);
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  .reviews-section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .reviews-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #fdd835;
+    }
+
+    .review-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .review-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+    }
+
+    .review-name {
+      font-weight: bold;
+      font-size: 18px;
+      color: #fdd835;
+      margin-bottom: 5px;
+    }
+
+    .review-rating {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .review-comment {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+/* Общие стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Контент модального окна */
+  .modal-content {
+    background-color: #1c1c1c;
+    margin: auto;
+    padding: 20px 30px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+  }
+  
+  /* Закрыть окно (крестик) */
+  .modal-content .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Заголовки в модалках */
+  .modal-content h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  /* Стили для форм в модалках */
+  .modal-content form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .modal-content form input,
+  .modal-content form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2c2c2c;
+    color: white;
+  }
+  
+  .modal-content form input::placeholder {
+    color: #999;
+  }
+  
+  /* Кнопка отправки формы */
+  .modal-content form button {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content form button:hover {
+    background-color: #e6c200;
+  }
+  
+  /* Вкладки в модальном окне авторизации */
+  .auth-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .auth-tabs button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+  
+  .auth-tabs button.active {
+    border-color: #FFD700;
+    color: #FFD700;
+  }
+  
+  .auth-tabs button:hover {
+    color: #FFD700;
+  }
+  
+  /* Ссылки в модалке авторизации */
+  .modal-content form a {
+    color: #8a2be2;
+    text-decoration: none;
+  }
+  
+  .modal-content form a:hover {
+    text-decoration: underline;
+  }
+
+  .account-menu {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: #1c1c1c;
+    border: 1px solid #888;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .account-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .account-menu li, .account-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .account-menu li:hover, .account-menu a:hover {
+    background-color: #333;
+  }
+  
+  .modal-content input[disabled] {
+    background-color: #333;
+    color: #999;
+  }  
+  
+  /* Секция спецпредложений */
+.special-offers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap; /* Чтобы адаптировалось на узких экранах */
+    background-color: #1a1a1a;
+}
+
+/* Сетка для тарифов */
+.offer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Каждый отдельный блок предложения */
+.offer {
+    background-color: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.15);
+}
+
+.offer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.offer-text {
+    padding: 20px;
+}
+
+.offer-text h3 {
+    color: #fdd835;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.offer-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.account-btn {
+  background-color: transparent;
+  color: #fdd835;
+  border: 1px solid #fdd835;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.account-btn:hover {
+  background-color: #fdd835;
+  color: #111;
+}
+
+.site-footer {
+  background-color: #121212;
+  color: white;
+  padding: 60px 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-menu,
+.footer-contacts {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 30px;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-menu h4,
+.footer-contacts h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #e52328;
+}
+
+.footer-contacts p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Скрыть бургер на десктопе */
+.burger-btn {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Показывать бургер и скрывать нав-меню на мобилках */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+  }
+}
